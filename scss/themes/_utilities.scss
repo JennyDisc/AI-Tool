@@ -1,0 +1,34 @@
+/* 排版 */
+.text-a-r {
+    text-align: right;
+}
+
+.d {
+    &-block {
+        display: block;
+    }
+
+    &-flex {
+        display: flex;
+    }
+}
+
+.fxww {
+    flex-wrap: wrap;
+}
+
+.jccsb {
+    justify-content: space-between;
+}
+
+.fxdc {
+    flex-direction: column;
+}
+
+// .fxdr {
+//     flex-direction: row;
+// }
+
+.aic {
+    align-items: center;
+}

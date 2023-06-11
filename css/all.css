@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 圖片reset */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* css reset end */
+/* 全站設定 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  /* 設計稿多處字體16px為css預設，故不另設font-size */
+  color: #FFFFFF;
+  background-color: #1E1E1E;
+}
+
+/* 字體樣式 */
+.fz-14 {
+  font-size: 14px;
+}
+.fz-20 {
+  font-size: 20px;
+}
+.fz-32 {
+  font-size: 32px;
+}
+.fz-48 {
+  font-size: 48px;
+}
+.fz-120 {
+  font-size: 120px;
+}
+
+.color-52 {
+  color: #525252;
+}
+.color-f2 {
+  color: #F2F2F2;
+}
+.color-02 {
+  color: #020202;
+}
+
+/* font-weight: 400預設值 */
+.fw-700 {
+  font-weight: 700;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+/* 行高 */
+.lh-12 {
+  line-height: 1.2;
+}
+
+/* 邊框樣式 */
+.border {
+  border: 1px solid #FFFFFF;
+}
+.border-line-52 {
+  border: 1px solid #525252;
+}
+.border-b-white {
+  border-bottom: 1px solid #FFFFFF;
+}
+.border-ra-16 {
+  border-radius: 16px;
+}
+.border-aiToolCard {
+  border: 1px solid #F2F2F2;
+  /* 解決邊框線條重疊 */
+  margin: -1px;
+}
+.border-aiToolCard-top {
+  border-top: 1px solid #F2F2F2;
+}
+
+/* 間距 */
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mb-160 {
+  margin-bottom: 160px;
+}
+
+.mtb-20 {
+  margin: 20px 0;
+}
+.mtb-40 {
+  margin: 40px 0;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ptb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ptb-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.ptb-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.prl-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.prl-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.p-20-32 {
+  padding: 20px 32px;
+}
+
+/* 排版 */
+.text-a-r {
+  text-align: right;
+}
+
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+
+.fxww {
+  flex-wrap: wrap;
+}
+
+.jccsb {
+  justify-content: space-between;
+}
+
+.fxdc {
+  flex-direction: column;
+}
+
+.aic {
+  align-items: center;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 244.99px;
+  height: 40px;
+}
+
+.headerTitle button {
+  color: #FFFFFF;
+  background: #1E1E1E;
+}
+.headerTitle img {
+  width: 180px;
+  height: 180px;
+}
+
+.server-card li {
+  width: 416px;
+  height: 366px;
+}
+
+.feeback > li {
+  background: rgba(255, 255, 255, 0.08);
+}
+.feeback > li > p {
+  width: 336px;
+  height: 215px;
+}
+
+.aiToolCard {
+  background-color: #FFFFFF;
+}
+.aiToolCard li {
+  /* 三欄每卡片寬度416/1296=32.098... */
+  max-width: 32.1%;
+  overflow: hidden;
+}
+
+.card-title {
+  /* 讓這區塊的內容自適應撐高。上一層.card-body要寫display: flex與flex-direction: column */
+  flex-grow: 1;
+}
+.card-title h2 {
+  line-height: 1.2;
+}
+.card-list span {
+  color: #020202;
+}
+.card-body img:hover {
+  transform: scale(110%);
+  transition: all 0.3s;
+}
+
+.share {
+  color: #020202;
+}
+.share:hover {
+  color: #525252;
+}
+
+.star {
+  color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,26 @@
+/* 邊框樣式 */
+.border {
+    border: 1px solid #FFFFFF;
+
+    &-line-52 {
+        border: 1px solid #525252;
+    }
+
+    &-b-white {
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    &-ra-16 {
+        border-radius: 16px;
+    }
+
+    &-aiToolCard {
+        border: 1px solid #F2F2F2;
+        /* 解決邊框線條重疊 */
+        margin: -1px;
+
+        &-top {
+            border-top: 1px solid #F2F2F2;
+        }
+    }
+}

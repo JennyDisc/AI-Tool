@@ -1,0 +1,85 @@
+// 表頭
+header {
+    img {
+        width: 244.99px;
+        height: 40px;
+    }
+}
+
+// 標題
+.headerTitle {
+    button {
+        color: #FFFFFF;
+        background: #1E1E1E;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+// 我們的服務
+.server-card {
+    li {
+        width: 416px;
+        height: 366px;
+    }
+}
+
+// 顧客反饋
+.feeback {
+    >li{
+        background: rgba(255, 255, 255, 0.08);
+        >p {
+            width: 336px;
+            height: 215px;
+        }
+    }
+}
+
+// AI工具列表
+.aiToolCard {
+    background-color: #FFFFFF;
+
+    li {
+        /* 三欄每卡片寬度416/1296=32.098... */
+        max-width: 32.1%;
+        overflow: hidden;
+    }
+}
+
+.card {
+    &-title {
+        /* 讓這區塊的內容自適應撐高。上一層.card-body要寫display: flex與flex-direction: column */
+        flex-grow: 1;
+
+        h2 {
+            line-height: 1.2;
+        }
+    }
+
+    &-list span {
+        color: #020202;
+    }
+
+    &-body img:hover {
+        transform: scale(110%);
+        transition: all 0.3s;
+    }
+}
+
+// google-icon
+.share {
+    color: #020202;
+
+    &:hover {
+        color: #525252;
+    }
+}
+
+.star {
+    color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+}

@@ -1,0 +1,52 @@
+/* 字體樣式 */
+.fz {
+    &-14 {
+        font-size: 14px;
+    }
+
+    &-20 {
+        font-size: 20px;
+    }
+
+    &-32{
+        font-size: 32px;
+    }
+
+    &-48{
+        font-size: 48px;
+    }
+
+    &-120 {
+        font-size: 120px;
+    }
+}
+
+.color{
+    &-52 {
+        color: #525252;
+    }
+    &-f2{
+        color: #F2F2F2;
+    }
+    &-02{
+        color: #020202;
+    }
+}
+
+
+
+/* font-weight: 400預設值 */
+.fw {
+    &-700 {
+        font-weight: 700;
+    }
+
+    &-900 {
+        font-weight: 900;
+    }
+}
+
+/* 行高 */
+.lh-12{
+    line-height: 1.2;
+}
