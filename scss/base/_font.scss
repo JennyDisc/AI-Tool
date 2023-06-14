@@ -4,32 +4,68 @@
         font-size: 14px;
     }
 
+    &-16 {
+        font-size: 16px;
+    }
+
     &-20 {
         font-size: 20px;
     }
 
-    &-32{
+    &-32 {
         font-size: 32px;
     }
 
-    &-48{
+    &-48 {
         font-size: 48px;
+    }
+
+    &-80 {
+        font-size: 80px;
     }
 
     &-120 {
         font-size: 120px;
     }
+
+    &-20-mb {
+        @media (max-width:767px) {
+            font-size: 20px;
+        }
+    }
+
+    &-32-mb {
+        @media (max-width:767px) {
+            font-size: 32px;
+        }
+    }
+
+    &-48-mb {
+        @media (max-width:767px) {
+            font-size: 48px;
+        }
+    }
 }
 
-.color{
+.color {
+    &-ff {
+        color: #FFFFFF;
+    }
+
     &-52 {
         color: #525252;
     }
-    &-f2{
+
+    &-f2 {
         color: #F2F2F2;
     }
-    &-02{
+
+    &-02 {
         color: #020202;
+    }
+
+    &-91 {
+        color: #919191;
     }
 }
 
@@ -47,6 +83,6 @@
 }
 
 /* 行高 */
-.lh-12{
+.lh-12 {
     line-height: 1.2;
 }

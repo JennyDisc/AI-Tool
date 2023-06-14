@@ -6,21 +6,27 @@
         border: 1px solid #525252;
     }
 
+    &-line-f2 {
+        border: 1px solid #F2F2F2;
+    }
+
     &-b-white {
         border-bottom: 1px solid #FFFFFF;
     }
 
-    &-ra-16 {
-        border-radius: 16px;
-    }
+    &-ra {
+        &-16 {
+            border-radius: 16px;
+        }
 
-    &-aiToolCard {
-        border: 1px solid #F2F2F2;
-        /* 解決邊框線條重疊 */
-        margin: -1px;
+        &-160 {
+            border-radius: 160px;
+        }
 
-        &-top {
-            border-top: 1px solid #F2F2F2;
+        &-20-mb {
+            @media (max-width:767px) {
+                border-radius: 20px;
+            }
         }
     }
 }

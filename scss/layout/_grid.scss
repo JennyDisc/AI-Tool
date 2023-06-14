@@ -1,0 +1,141 @@
+// 手機斷點
+@mixin phone {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+
+// 表頭
+header {
+    @include phone() {
+        img {
+            width: 147px;
+            height: 24px;
+        }
+    }
+}
+
+
+// 標題
+.headerTitle {
+    @include phone() {
+        h2 {
+            width: 252px;
+        }
+
+        &-img img {
+            width: 117px;
+            height: 117px;
+        }
+    }
+}
+
+// 我們的服務
+.server {
+    @include phone() {
+        &-title-mb {
+            display: block;
+        }
+
+        &-card {
+            li {
+                width: 100%;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// 顧客反饋
+.feeback {
+    @include phone() {
+        li {
+            margin-right: 0px;
+        }
+
+        // li:nth-child(4) {
+        //     display: block;
+        // }
+    }
+
+}
+
+// AI工具列表
+.aiTool {
+    @include phone() {
+
+        // 卡片區塊
+        &-card {
+            li {
+                max-width: 100%;
+            }
+        }
+
+        &-filter {
+            //  flex元素換行
+            flex-wrap: wrap;
+
+            li:nth-child(1) {
+                order: 1;
+            }
+
+            li:nth-child(2) {
+                order: 3;
+                margin: 0 auto;
+            }
+
+            li:nth-child(3) {
+                order: 2;
+            }
+        }
+
+        &-type {
+            // 換行處理
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
+    }
+}
+
+// 卡片內容
+.card {
+    @include phone() {
+        &-body {
+            &:nth-child(1) {
+                margin-bottom: 12px;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 12px;
+            }
+
+            &:nth-child(3) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+// 表尾
+.footer {
+    @include phone() {
+        &-title {
+            flex-direction: column-reverse;
+
+            img {
+                width: 188.99px;
+                height: 40px;
+            }
+        }
+
+        &-buttom {
+            li:nth-child(1) {
+                flex-direction: column;
+
+                p {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

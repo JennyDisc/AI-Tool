@@ -17,9 +17,14 @@
 // 元件：容器樣式
 @import "./components/container";
 
-// 語法庫
-@import "./utils/mixins";
-
 // 頁面
 @import "./pages/index";
+
+// // 第三方套件
+// // swiper
+// @import "./vendors/swiper";
+
+// 斷點
+@import "./layout/grid";
+
 

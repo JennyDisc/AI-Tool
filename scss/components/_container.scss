@@ -1,4 +1,7 @@
 .container {
     max-width: 1296px;
     margin: 0 auto;
+    // 左右兩邊有12px留白邊界
+    padding-left: 12px;
+    padding-right: 12px;
 }

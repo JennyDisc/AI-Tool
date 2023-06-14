@@ -1,6 +1,12 @@
 /* 排版 */
-.text-a-r {
-    text-align: right;
+.text {
+    &-a-r {
+        text-align: right;
+    }
+
+    &-a-c {
+        text-align: center;
+    }
 }
 
 .d {
@@ -11,24 +17,47 @@
     &-flex {
         display: flex;
     }
+
+    &-none {
+        display: none;
+    }
+
+    &-none-mb {
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    &-block-mb {
+        @media (max-width:767px) {
+            display: block;
+        }
+    }
 }
 
 .fxww {
     flex-wrap: wrap;
 }
 
+// 主軸對齊
 .jccsb {
     justify-content: space-between;
 }
 
+.jce {
+    justify-content: end;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+// 主軸
 .fxdc {
     flex-direction: column;
 }
 
-// .fxdr {
-//     flex-direction: row;
-// }
-
+// 交錯軸
 .aic {
     align-items: center;
 }
