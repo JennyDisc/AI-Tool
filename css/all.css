@@ -549,17 +549,19 @@ header a:hover {
   flex-grow: 1;
 }
 .feeback .swiper-pagination {
-  border: 1px solid red;
   bottom: -24px;
 }
 .feeback .swiper-pagination-bullet {
   background-color: #525252;
   opacity: 1;
+  width: 8px;
+  height: 8px;
 }
 .feeback .swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
   background-color: white;
+  aspect-ratio: 1/1;
 }
 
 .aiTool {
