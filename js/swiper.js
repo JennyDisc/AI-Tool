@@ -8,5 +8,12 @@ var swiper = new swiper(".mySwiper", {
         768: {
             slidesPerView: 3
         }
-    }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        // 輪播下面的分頁小點點
+        dynamicBullets: true,
+        // 分頁小點點可以被點擊
+        clickable: true,
+    },
 });
