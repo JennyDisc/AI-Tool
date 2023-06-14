@@ -2,6 +2,7 @@
 var swiper = new Swiper(".mySwiper", {
     // 在手機版時呈現單欄排版
     slidesPerView: 1,
+    // 卡片間距24
     spaceBetween: 24,
     // 斷點設定
     breakpoints: {
