@@ -35,29 +35,29 @@
     }
 }
 
-.fxww {
+.flex-w-wrap {
     flex-wrap: wrap;
 }
 
 // 主軸對齊
-.jccsb {
+.justify-between {
     justify-content: space-between;
 }
 
-.jce {
+.justify-end {
     justify-content: end;
 }
 
-.jcc {
+.justify-center {
     justify-content: center;
 }
 
 // 主軸
-.fxdc {
+.flex-d-column {
     flex-direction: column;
 }
 
-// 交錯軸
-.aic {
+// 交錯軸對齊
+.align-center {
     align-items: center;
 }

@@ -437,27 +437,27 @@ a {
   }
 }
 
-.fxww {
+.flex-w-wrap {
   flex-wrap: wrap;
 }
 
-.jccsb {
+.justify-between {
   justify-content: space-between;
 }
 
-.jce {
+.justify-end {
   justify-content: end;
 }
 
-.jcc {
+.justify-center {
   justify-content: center;
 }
 
-.fxdc {
+.flex-d-column {
   flex-direction: column;
 }
 
-.aic {
+.align-center {
   align-items: center;
 }
 
@@ -549,19 +549,17 @@ header a:hover {
   flex-grow: 1;
 }
 .feeback .swiper-pagination {
-  bottom: -24px;
+  position: relative;
+  margin-top: 24px;
 }
 .feeback .swiper-pagination-bullet {
   background-color: #525252;
   opacity: 1;
-  width: 8px;
-  height: 8px;
 }
 .feeback .swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
-  background-color: white;
-  aspect-ratio: 1/1;
+  background-color: #FFFFFF;
 }
 
 .aiTool {
@@ -617,20 +615,20 @@ header a:hover {
   padding: 10px 12px;
 }
 .aiTool-pagination li a:hover {
-  color: white;
+  color: #FFFFFF;
 }
 
 .card-title {
   /* 讓這區塊的內容自適應撐高。上一層.card-body要寫display: flex與flex-direction: column */
   flex-grow: 1;
 }
-.card-title h4 {
-  line-height: 1.2;
-}
 .card-body {
   border: 1px solid #F2F2F2;
   /* 解決邊框線條重疊 */
   margin: -1px;
+}
+.card-body img {
+  width: 100%;
 }
 .card-body:nth-child(1) {
   margin-bottom: 24px;
@@ -660,8 +658,8 @@ header a:hover {
 }
 
 .footer-title {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 .footer-title-menu a:hover {
   color: #525252;

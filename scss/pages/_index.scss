@@ -135,6 +135,9 @@ header {
 
 // 顧客反饋
 .feeback {
+    // 分頁點點在卡片下方法1：拿掉swiper css對swiper的overflow:hidden
+    // overflow: visible;
+
     .swiper {
         &-slide {
             background: rgba(255, 255, 255, 0.08);
@@ -152,19 +155,23 @@ header {
         }
 
         &-pagination {
-            bottom: -24px;
+            // 分頁點點在卡片下方法1：拿掉swiper css對swiper的overflow:hidden
+            // bottom: -24px;
+
+            // 分頁點點在卡片下方法2：讓 pagination 回到它本來在 .swiper 中的位置並撐回它該有的高度
+            position: relative;
+            margin-top: 24px;
 
             &-bullet {
                 background-color: #525252;
+                // 透明度
                 opacity: 1;
-                width: 8px;
-                height: 8px;
+
                 &-active {
                     width: 12px;
                     height: 12px;
-                    background-color: #ffff;
-                    aspect-ratio: 1/1;
-                  }
+                    background-color: #FFFFFF;
+                }
             }
         }
     }
@@ -245,7 +252,7 @@ header {
                 padding: 10px 12px;
 
                 &:hover {
-                    color: #ffff;
+                    color: #FFFFFF;
                 }
             }
         }
@@ -257,16 +264,16 @@ header {
     &-title {
         /* 讓這區塊的內容自適應撐高。上一層.card-body要寫display: flex與flex-direction: column */
         flex-grow: 1;
-
-        h4 {
-            line-height: 1.2;
-        }
     }
 
     &-body {
         border: 1px solid #F2F2F2;
         /* 解決邊框線條重疊 */
         margin: -1px;
+
+        img {
+            width: 100%;
+        }
 
         &:nth-child(1) {
             margin-bottom: 24px;
@@ -310,8 +317,8 @@ header {
 // 表尾
 .footer {
     &-title {
-        border-top: 1px solid #ffff;
-        border-bottom: 1px solid #ffff;
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
 
         &-menu {
             a:hover {
