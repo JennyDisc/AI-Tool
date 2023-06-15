@@ -1,5 +1,51 @@
 // 表頭
+.navbar-btn {
+    display: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: none;
+    border: 0;
+
+    &-collapse {
+        // 點擊漢堡選單前隱藏下拉選單 ul li
+        display: none;
+        // 定義下拉選單寬高
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        // <header>高度80px，所以漢堡的下拉選單要定位在81px
+        top: 81px;
+
+        a {
+            display: block;
+            padding: 8px 12px;
+            text-align: center;
+            // hover效果為滑到該列時整列出現底色
+            width: 100%;
+            &:hover{
+                color: #FFFFFF;
+                background: #525252;
+            }
+        }
+
+        li:nth-child(2) {
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        // 點擊漢堡選單後，讓下拉選單 ul li 顯示
+        &.show {
+            display: block;
+        }
+    }
+}
+
+
 header {
+    // 定位給.navbar-btn-collapse找父層用的(即定位起點依據)
+    position: relative;
+    // 固定<header>表頭高度
+    height: 80px;
+
     img {
         width: 244.99px;
         height: 40px;
@@ -12,6 +58,14 @@ header {
 
 // 標題
 .headerTitle {
+
+    // 點擊漢堡選單後，h2這區塊的<section>向下位移80px
+    &.move-bottom {
+        position: relative;
+        // .headerTitle上一層沒有定位，所以按照排版，會貼在<header>下底線。因下拉選單高度80，所以要下移80px
+        top: 80px;
+    }
+
     button {
         color: #FFFFFF;
         background: #1E1E1E;

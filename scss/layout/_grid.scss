@@ -6,8 +6,19 @@
 }
 
 // 表頭
+.navbar-btn {
+    @include phone() {
+        display: block;
+    }
+}
+
+
 header {
     @include phone() {
+        &-menu {
+            display: none;
+        }
+
         img {
             width: 147px;
             height: 24px;
@@ -71,16 +82,16 @@ header {
             //  flex元素換行
             flex-wrap: wrap;
 
-            li:nth-child(1) {
+            >li:nth-child(1) {
                 order: 1;
             }
 
-            li:nth-child(2) {
+            >li:nth-child(2) {
                 order: 3;
                 margin: 0 auto;
             }
 
-            li:nth-child(3) {
+            >li:nth-child(3) {
                 order: 2;
             }
         }
