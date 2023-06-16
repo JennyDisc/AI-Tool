@@ -483,9 +483,9 @@ a {
   top: 81px;
 }
 .navbar-btn-collapse a {
-  display: block;
   padding: 8px 12px;
   text-align: center;
+  display: block;
   width: 100%;
 }
 .navbar-btn-collapse a:hover {
@@ -622,6 +622,38 @@ header a:hover {
 }
 .aiTool-filter button {
   background: #FFFFFF;
+}
+.aiTool-filter-btn {
+  cursor: pointer;
+}
+.aiTool-filter-btn:active {
+  border: 1px solid #000;
+}
+.aiTool-filter > li:nth-child(3) {
+  position: relative;
+}
+.aiTool-filter .dropdown-btn {
+  cursor: pointer;
+}
+.aiTool-filter .dropdown-btn:active {
+  border: 1px solid #000;
+}
+.aiTool-filter .dropdown-btn-menu {
+  display: none;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.aiTool-filter .dropdown-btn-menu.show {
+  display: block;
+}
+.aiTool-filter .dropdown-btn-menu a {
+  display: block;
+}
+.aiTool-filter .dropdown-btn-menu a:hover {
+  color: #FFFFFF;
+  background: #525252;
 }
 .aiTool-type li:nth-child(1) a {
   background: #F2F2F2;

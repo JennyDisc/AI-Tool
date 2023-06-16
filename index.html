@@ -266,7 +266,7 @@
                 </div>
                 <ul class="aiTool-filter d-flex justify-between align-center mb-40 mb-48-mb">
                     <li class="color-02 mb-16-mb">
-                        <button type="button" class="ptb-20 prl-40 border-line-f2 border-ra-16 d-flex align-center">
+                        <button type="button" class="aiTool-filter-btn ptb-20 prl-40 border-line-f2 border-ra-16 d-flex align-center">
                             <span class="fz-16 mr-12">篩選</span>
                             <span class="material-symbols-outlined">
                                 filter_alt
@@ -285,12 +285,20 @@
                         </ul>
                     </li>
                     <li class="color-02 mb-16-mb">
-                        <button type="button" class="ptb-20 prl-40 border-line-f2 border-ra-16 d-flex align-center">
-                            <span class="fz-16 mr-12">由新到舊</span>
+                        <button type="button" class="dropdown-btn ptb-20 prl-40 border-line-f2 border-ra-16 d-flex align-center">
+                            <span class="fz-16 mr-12 dropdown-btn-text">由新到舊</span>
                             <span class="material-symbols-outlined">
                                 expand_more
                             </span>
                         </button>
+                        <ul class="dropdown-btn-menu border-line-f2 border-ra-16 text-a-c">
+                            <li>
+                                <a href="#" class="new-to-old color-02 ptb-8">由新到舊</a>
+                            </li>
+                            <li>
+                                <a href="#" class="old-to-new color-02 ptb-8">由舊到新</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <!-- 卡片 -->
@@ -438,11 +446,13 @@
                     </ul>
                 <li>
                 <li>
-                    <button type="button" class="d-flex align-center">
-                        <span class="fz-16 fw-700 mr-12">Back to top</span>
-                        <span class="material-symbols-outlined">
-                            arrow_upward
-                        </span>
+                    <button type="button">
+                        <a href="#" class="d-flex align-center">
+                            <span class="fz-16 fw-700 mr-12">Back to top</span>
+                            <span class="material-symbols-outlined">
+                                arrow_upward
+                            </span>
+                        </a>
                     </button>
                 </li>
             </ul>

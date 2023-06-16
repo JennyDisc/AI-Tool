@@ -17,12 +17,14 @@
         top: 81px;
 
         a {
-            display: block;
             padding: 8px 12px;
             text-align: center;
             // hover效果為滑到該列時整列出現底色
+            display: block;
+            // <a>滿版
             width: 100%;
-            &:hover{
+
+            &:hover {
                 color: #FFFFFF;
                 background: #525252;
             }
@@ -257,6 +259,51 @@ header {
     &-filter {
         button {
             background: #FFFFFF;
+        }
+
+        &-btn {
+            cursor: pointer;
+
+            &:active {
+                border: 1px solid #000;
+            }
+        }
+
+        // 定位給.dropdown-btn-menu找父層用的(即定位起點依據)
+        &>li:nth-child(3) {
+            position: relative;
+        }
+
+        .dropdown-btn {
+            cursor: pointer;
+
+            &:active {
+                border: 1px solid #000;
+            }
+
+            &-menu {
+                // 點擊按鈕前隱藏選單
+                display: none;
+                position: relative;
+                margin-top: 20px;
+                // 讓a:hover超出<ul>的部分隱藏
+                overflow: hidden;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+                &.show {
+                    display: block;
+                }
+
+                a {
+                    // hover效果為滑到該列時整列出現底色
+                    display: block;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background: #525252;
+                    }
+                }
+            }
         }
     }
 
