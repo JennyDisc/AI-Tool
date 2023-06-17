@@ -22,6 +22,10 @@
         margin-bottom: 12px;
     }
 
+    &-16 {
+        margin-bottom: 16px;
+    }
+
     &-20 {
         margin-bottom: 20px;
     }
@@ -48,6 +52,10 @@
 
     &-160 {
         margin-bottom: 160px;
+    }
+
+    &-238 {
+        margin-bottom: 238px;
     }
 
     &-12-mb {
@@ -92,6 +100,12 @@
         }
     }
 
+    &-64-mb {
+        @media (max-width:767px) {
+            margin-bottom: 64px;
+        }
+    }
+
     &-120-mb {
         @media (max-width:767px) {
             margin-bottom: 120px;
@@ -101,6 +115,12 @@
     &-180-mb {
         @media (max-width:767px) {
             margin-bottom: 180px;
+        }
+    }
+
+    &-258-mb {
+        @media (max-width:767px) {
+            margin-bottom: 258px;
         }
     }
 }
@@ -186,9 +206,21 @@
         padding-right: 20px;
     }
 
+    &-32 {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
     &-40 {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    &-20-mb {
+        @media (max-width:767px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 }
 

@@ -1,0 +1,50 @@
+// 開始服務
+.begin {
+    button {
+        margin: 0 auto;
+        color: #FFFFFF;
+        background: #1E1E1E;
+        cursor: pointer;
+
+        &:hover {
+            background: #525252;
+        }
+    }
+}
+
+
+// 表尾
+.footer {
+    &-title {
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+
+        &-menu {
+            a:hover {
+                color: #525252;
+            }
+        }
+
+        img {
+            width: 244.99px;
+            height: 40px;
+        }
+    }
+
+    &-buttom {
+        a:hover {
+            color: #525252;
+        }
+
+        button {
+            color: #FFFFFF;
+            border: none;
+            background: #1E1E1E;
+            cursor: pointer;
+
+            &:hover {
+                color: #525252;
+            }
+        }
+    }
+}

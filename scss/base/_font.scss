@@ -34,6 +34,12 @@
         }
     }
 
+    &-28-mb {
+        @media (max-width:767px) {
+            font-size: 28px;
+        }
+    }
+
     &-32-mb {
         @media (max-width:767px) {
             font-size: 32px;

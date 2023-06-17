@@ -7,6 +7,13 @@ $(document).ready(function () {
         $(".headerTitle").toggleClass("move-bottom");
     });
 
+    // 
+    // $('.headerTitle-img').click(function (e) { 
+    //     $('img:nth-child(1)').addClass('animate_animated animate__heartBeat');
+    //     $('img:nth-child(2)').addClass('animate_animated animate__heartBeat');
+    //     $('img:nth-child(3)').addClass('animate_animated animate__heartBeat');        
+    // });
+
     // AI工具列表選單展開
     $(".dropdown-btn").click(function (e) {
         // 點擊後展開下拉選單
@@ -25,5 +32,17 @@ $(document).ready(function () {
         // 選完後把一開始點擊按鈕的狀態show關閉
         $(".dropdown-btn-menu").toggleClass("show");
         $(".dropdown-btn-text").text($('.old-to-new').text());
+    });
+
+    // 常見問題
+    $(".question-block-card>a").click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        // 展開答案
+        // $(this).toggleClass("show");
+        $(this).find('.add-icon').toggleClass('show');
+        $(this).find('.remove-icon').toggleClass('show');
+        $(this).find('.question-block-collapse').toggleClass('show');
+        // $(".remove-icon").toggleClass("show");
     });
 });

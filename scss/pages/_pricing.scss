@@ -1,0 +1,65 @@
+// 標題
+.headerTitle {
+    h3 {
+        width: 636px;
+        margin-left: auto;
+    }
+}
+
+// 定價
+.price-card {
+    &>li {
+        // 卡片寬度=(滿版-各卡片左右推擠32px)/2(表示各佔50%)
+        width: calc((100% - 32px) / 2);
+
+        &:hover {
+            border: 1px solid #FFFFFF;
+        }
+    }
+
+    &-list {
+        list-style: disc;
+        margin-left: 32px;
+        // 160+24(一列字的高度)-20(標題區塊上下推擠)=164
+        height: 164px;
+    }
+
+    &-footer {
+        border-top: 1px solid #525252;
+        a:hover{
+            color: #525252;
+        }
+    }
+}
+
+// 常見問題
+.question-block {
+    >ul {
+        // <h3>與問答區塊間距312px
+        width: calc((100% - 312px));
+    }
+
+    &-card a {
+        &:hover {
+            border: 1px solid #FFFFFF;
+        }
+
+        &.active {
+            border: 2px solid #FFFFFF;
+        }
+    }
+
+    .add-icon.show {
+        display: none;
+    }
+
+    .remove-icon.show {
+        display: block;
+    }
+
+    &-collapse.show {
+        display: block;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,165 @@
+// AI工具列表
+.aiTool {
+    background-color: #FFFFFF;
+
+    &-search {
+        position: relative;
+
+        input {
+            width: 100%;
+            padding-left: 76px;
+            border-radius: 16px;
+            background: #F2F2F2;
+            border: none;
+            outline: none;
+        }
+
+        .search {
+            position: absolute;
+            bottom: 16px;
+            left: 40px;
+        }
+    }
+
+    &-filter {
+        button {
+            background: #FFFFFF;
+        }
+
+        &-btn {
+            cursor: pointer;
+
+            &:active {
+                border: 1px solid #000;
+            }
+        }
+
+        // 定位給.dropdown-btn-menu找父層用的(即定位起點依據)
+        &>li:nth-child(3) {
+            position: relative;
+        }
+
+        .dropdown-btn {
+            cursor: pointer;
+
+            &:active {
+                border: 1px solid #000;
+            }
+
+            &-menu {
+                // 點擊按鈕前隱藏選單
+                display: none;
+                position: relative;
+                margin-top: 20px;
+                // 讓a:hover超出<ul>的部分隱藏
+                overflow: hidden;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+                &.show {
+                    display: block;
+                }
+
+                a {
+                    // hover效果為滑到該列時整列出現底色
+                    display: block;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background: #525252;
+                    }
+                }
+            }
+        }
+    }
+
+    &-type {
+        li {
+            &:nth-child(1) a {
+                background: #F2F2F2;
+            }
+
+            &:hover a {
+                background: #F2F2F2;
+                font-weight: 700;
+                border-radius: 16px;
+            }
+
+            a:hover {
+                color: #020202;
+            }
+        }
+    }
+
+    // 卡片區塊
+    &-card {
+        li {
+            /* 三欄每卡片寬度416/1296=32.098... */
+            max-width: 32.1%;
+            overflow: hidden;
+        }
+    }
+
+    // 卡片頁碼
+    &-pagination {
+        li {
+            width: 48px;
+            height: 48px;
+
+            &:nth-child(1) {
+                background: #020202;
+            }
+
+            &:hover {
+                background: #525252;
+                border-radius: 16px;
+            }
+
+            a {
+                padding: 10px 12px;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+// 卡片內容
+.card {
+    &-title {
+        /* 讓這區塊的內容自適應撐高。上一層.card-body要寫display: flex與flex-direction: column */
+        flex-grow: 1;
+    }
+
+    &-body {
+        border: 1px solid #F2F2F2;
+        /* 解決邊框線條重疊 */
+        margin: -1px;
+
+        img {
+            width: 100%;
+        }
+
+        &:nth-child(1) {
+            margin-bottom: 24px;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 24px;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 24px;
+        }
+
+        img:hover {
+            transform: scale(110%);
+            transition: all 0.3s;
+        }
+    }
+
+    &-list {
+        border-top: 1px solid #F2F2F2;
+    }
+}

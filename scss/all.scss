@@ -17,10 +17,19 @@
 // 元件：容器樣式
 @import "./components/container";
 
+// 通用樣式設定
+// 頁面
+@import "./layout/common_header";
+@import "./layout/common_aiTool";
+@import "./layout/common_footer";
+
 // 頁面
 @import "./pages/index";
+@import "./pages/pricing";
 
+// 通用樣式設定
 // 斷點
 @import "./layout/grid";
+
 
 
