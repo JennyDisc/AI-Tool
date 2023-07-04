@@ -952,6 +952,10 @@ header a:hover {
   .headerTitle h3 {
     width: 257px;
   }
+  .headerTitle-img img {
+    width: 117px;
+    height: 117px;
+  }
 }
 
 @media (max-width: 767px) {
