@@ -24,16 +24,19 @@
 
     <div class="container">
         <header class="d-flex justify-between align-center ptb-20 border-b-white ptb-28-mb">
-            <h1><a href="./index.html"><img
-                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
-                        alt="AI工具王logo"></a></h1>
+            <h1>
+                <a href="./index.html">AI工具王</a>
+            </h1>
             <ul class="header-menu d-flex d-none-mb">
                 <li class="mr-20 fw-700"><a href="./index.html">首頁</a></li>
                 <li class="fw-700"><a href="./pricing.html">定價</a></li>
             </ul>
             <button type="button" class="navbar-btn">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined navbar-btn-menu">
                     menu
+                </span>
+                <span class="material-symbols-outlined navbar-btn-close d-none">
+                    close
                 </span>
             </button>
             <div class="navbar-btn-collapse">
@@ -46,45 +49,58 @@
         <main>
             <section class="headerTitle mt-40 mb-160 mb-120-mb">
                 <h2 class="fz-120 fw-900 lh-12 mb-40 fz-48-mb">
-                    <span>透過</span><br>
-                    <span>AI 工具王的</span><br>
-                    <span>強大模型</span><br>
-                    <span>讓您的業務更聰明</span>
+                    透過<br>
+                    AI 工具王的<br>
+                    強大模型<br>
+                    讓您的業務更聰明
                 </h2>
                 <button type="button"
                     class="fz-20 fw-900 lh-12 border border-ra-16 ptb-20 prl-40 mb-100 mb-180-mb">開始使用</button>
-                <div class="headerTitle-img text-a-r">
+                <div class="headerTitle-img d-flex justify-end">
+                    <!-- 法1 -->
                     <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
                         alt="動畫草的圖案" class="animate__animated animate__fadeInUp">
                     <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
                         alt="動畫草的圖案" class="animate__animated animate__fadeInUp">
                     <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
                         alt="動畫草的圖案" class="animate__animated animate__fadeInUp">
+                    <!-- 法2：利用keyframes微調動畫 -->
+                    <!-- <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+                        alt="動畫草的圖案" class="animate__fadeInUp">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+                        alt="動畫草的圖案" class="animate__fadeInUp-1">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+                        alt="動畫草的圖案" class="animate__fadeInUp-2"> -->
                 </div>
             </section>
             <!-- 我們的服務 -->
             <section class="mb-160 mb-120-mb">
-                <div class="server d-flex justify-between mb-80 d-block-mb mb-48-mb">
+                <div class="service d-flex justify-between mb-80 d-block-mb mb-48-mb">
                     <h3 class="fz-32 fw-900 lh-12 fz-20-mb mb-24-mb">我們的服務</h3>
                     <p class="serve-title fz-48 fw-900 lh-12 d-none-mb">我們相信透過 AI 技術，<br>
                         包括圖像識別、自然語言處理和機器翻<br>譯等，讓您更快、更準確地做出決策。</p>
-                    <p class="server-title-mb fw-900 lh-12 fz-32-mb">我們相信透過 AI 技術，<br>
+                    <p class="service-title-mb fw-900 lh-12 fz-32-mb">我們相信透過 AI 技術，<br>
                         包括圖像識別、自然語<br>言處理和機器翻譯等，<br>讓您更快、更準確地做<br>出決策。</p>
                 </div>
-                <ul class="server-card d-flex justify-between d-block-mb">
+                <ul class="service-card d-flex justify-between d-block-mb">
                     <li class="border-line-52 border-ra-16 ptb-80 prl-40 mr-24 mb-12-mb">
-                        <img src="./images/Vector.png" alt="快速icon" class="mb-20">
+                        <span class="material-symbols-outlined flash_on mb-20">
+                            flash_on
+                        </span>
                         <h4 class="fz-32 fw-900 lh-12 mb-20">快速</h4>
                         <p class="color-f2">我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
                     </li>
                     <li class="border-line-52 border-ra-16 ptb-80 prl-40 mr-24 mb-12-mb">
-                        <img src="./images/Vector (2).png" alt="靈活icon" class="mb-20">
+                        <span class="material-symbols-outlined auto_awesome mb-20">
+                            auto_awesome
+                        </span>
                         <h4 class="fz-32 fw-900 lh-12 mb-20">靈活</h4>
                         <p class="color-f2">我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
                     </li>
                     <li class="border-line-52 border-ra-16 ptb-80 prl-40 mr-24 mb-12-mb">
-                        <img src="./images/Vector (3).png" alt="擴充icon" class="mb-20">
-                        <img src="" alt="">
+                        <span class="material-symbols-outlined library_add mb-20">
+                            library_add
+                        </span>
                         <h4 class="fz-32 fw-900 lh-12 mb-20">擴充</h4>
                         <p class="color-f2">我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
                     </li>
@@ -93,7 +109,8 @@
             <!-- 合作夥伴 -->
             <section class="partner mb-160 mb-48-mb">
                 <h3 class="fz-32 fw-900 lh-12 mb-80 fz-20-mb mb-24-mb">來自合作夥伴</h3>
-                <ul class="partner-logo d-flex justify-center align-center mb-20">
+                <!-- mb-20 -->
+                <ul class="partner-logo d-flex justify-center align-center pb-20">
                     <li>
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true"
                             alt="log0">
@@ -159,10 +176,10 @@
                 </ul>
             </section>
             <!-- 顧客反饋 -->
-            <section class="feeback mb-160 mb-120-mb swiper mySwiper">
+            <section class="feedback mb-160 mb-120-mb swiper mySwiper">
                 <ul class="swiper-wrapper">
                     <li class="ptb-40 prl-40 border-ra-16 swiper-slide">
-                        <div class="feeback-title mb-20">
+                        <div class="feedback-title mb-20">
                             <span class="material-symbols-outlined star mr-4">
                                 star
                             </span>
@@ -182,17 +199,17 @@
                         <p class="mb-20 color-f2">非常喜歡 AI工具王 提供的 AI
                             模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的
                             AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</p>
-                        <div class="feeback-content d-flex align-center">
+                        <div class="feedback-content d-flex align-center">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/avatar3.png?raw=true"
                                 alt="陳小姐photo" class="mr-16">
-                            <div class="feeback-name d-flex flex-d-column">
+                            <div class="feedback-name d-flex flex-d-column">
                                 <p class="fw-700 mb-4">陳小姐</p>
                                 <p class="fz-14">ABC科技有限公司</p>
                             </div>
                         </div>
                     </li>
                     <li class="ptb-40 prl-40 border-ra-16 swiper-slide">
-                        <div class="feeback-title mb-20">
+                        <div class="feedback-title mb-20">
                             <span class="material-symbols-outlined star mr-4">
                                 star
                             </span>
@@ -211,17 +228,17 @@
                         </div>
                         <p class="mb-20 color-f2">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王
                             的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</p>
-                        <div class="feeback-content d-flex align-center">
+                        <div class="feedback-content d-flex align-center">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/avatar1.png?raw=true"
                                 alt="劉小姐photo" class="mr-16">
-                            <div class="feeback-name d-flex flex-d-column">
+                            <div class="feedback-name d-flex flex-d-column">
                                 <p class="fw-700 mb-4">劉小姐</p>
                                 <p class="fz-14">XYZ 醫療器材有限公司</p>
                             </div>
                         </div>
                     </li>
                     <li class="ptb-40 prl-40 border-ra-16 swiper-slide">
-                        <div class="feeback-title mb-20">
+                        <div class="feedback-title mb-20">
                             <span class="material-symbols-outlined star mr-4">
                                 star
                             </span>
@@ -241,10 +258,10 @@
                         <p class="mb-20 color-f2">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用
                             AI工具王
                             的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！</p>
-                        <div class="feeback-content d-flex align-center">
+                        <div class="feedback-content d-flex align-center">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/avatar2.png?raw=true"
                                 alt="黃先生photo" class="mr-16">
-                            <div class="feeback-name d-flex flex-d-column">
+                            <div class="feedback-name d-flex flex-d-column">
                                 <p class="fw-700 mb-4">黃先生</p>
                                 <p class="fz-14">EFG 銀行</p>
                             </div>
@@ -275,6 +292,64 @@
                                 filter_alt
                             </span>
                         </button>
+                        <ul class="dropdown-btn-filter border-line-f2 border-ra-16 ptb-20 color-02 d-none">
+                            <li class="mb-20">
+                                <ul>
+                                    <li><a href="#" class="filter-title fz-14 ptb-8 prl-40">AI模型</a></li>
+                                    <li><a href="#" class="filter-content">所有模型<span class="material-symbols-outlined">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">卡卡<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">杰杰<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">琪琪<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">昊昊<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#" class="filter-title fz-14 ptb-8 prl-40">類型</a></li>
+                                    <li><a href="#" class="filter-content">所有類型<span class="material-symbols-outlined">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">聊天<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">影像辨識<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">翻譯<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">行銷<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">克服<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                    <li><a href="#" class="filter-content">生產力<span
+                                                class="material-symbols-outlined d-none">
+                                                check
+                                            </span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li class="aiTool-type">
                         <ul class="d-flex">
@@ -291,16 +366,19 @@
                         <button type="button"
                             class="dropdown-btn ptb-20 prl-40 border-line-f2 border-ra-16 d-flex align-center">
                             <span class="fz-16 mr-12 dropdown-btn-text">由新到舊</span>
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined dropdown-btn-expandMore">
                                 expand_more
                             </span>
+                            <span class="material-symbols-outlined dropdown-btn-expandLess d-none">
+                                expand_less
+                            </span>
                         </button>
-                        <ul class="dropdown-btn-menu border-line-f2 border-ra-16 text-a-c">
+                        <ul class="dropdown-btn-menu border-line-f2 border-ra-16 text-a-c ptb-20">
                             <li>
-                                <a href="#" class="new-to-old color-02 ptb-8">由新到舊</a>
+                                <a href="#" class="new-to-old color-02 ptb-8 prl-40">由新到舊</a>
                             </li>
                             <li>
-                                <a href="#" class="old-to-new color-02 ptb-8">由舊到新</a>
+                                <a href="#" class="old-to-new color-02 ptb-8 prl-40">由舊到新</a>
                             </li>
                         </ul>
                     </li>
@@ -308,7 +386,8 @@
                 <!-- 卡片 -->
                 <ul class="aiTool-card d-flex justify-between flex-w-wrap mb-40 d-block-mb mb-32-mb">
                     <li class="card-body color-02 border-ra-16 d-flex flex-d-column">
-                        <a href="#" class="d-block"><img
+                        <!-- 建立容器(<a>轉為區塊元素)讓卡片Zoom-in效果時圖片不會向下蔓延 -->
+                        <a href="#" class="card-img-top d-block"><img
                                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool1.png"
                                 alt="Chatbot Builder logo"></a>
                         <div class="card-title p-20-32">
@@ -323,7 +402,7 @@
                                 </span></a></div>
                     </li>
                     <li class="card-body color-02 border-ra-16 d-flex flex-d-column">
-                        <a href="#" class="d-block"><img
+                        <a href="#" class="card-img-top d-block"><img
                                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool2.png"
                                 alt="Image Recognition Platform logo"></a>
                         <div class="card-title p-20-32">
@@ -338,7 +417,7 @@
                                 </span></a></div>
                     </li>
                     <li class="card-body color-02 border-ra-16 d-flex flex-d-column">
-                        <a href="#" class="d-block"><img
+                        <a href="#" class="card-img-top d-block"><img
                                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool3.png"
                                 alt="Language Translation API logo"></a>
                         <div class="card-title p-20-32">
@@ -353,7 +432,7 @@
                                 </span></a></div>
                     </li>
                     <li class="card-body color-02 border-ra-16 d-flex flex-d-column">
-                        <a href="#" class="d-block"><img
+                        <a href="#" class="card-img-top d-block"><img
                                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool4.png"
                                 alt="Sentiment Analysis API logo"></a>
                         <div class="card-title p-20-32">
@@ -368,7 +447,7 @@
                                 </span></a></div>
                     </li>
                     <li class="card-body color-02 border-ra-16 d-flex flex-d-column">
-                        <a href="#" class="d-block"><img
+                        <a href="#" class="card-img-top d-block"><img
                                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool5.png"
                                 alt="Fraud Detection Platform logo"></a>
                         <div class="card-title p-20-32">
@@ -383,7 +462,7 @@
                                 </span></a></div>
                     </li>
                     <li class="card-body color-02 border-ra-16 d-flex flex-d-column">
-                        <a href="#" class="d-block"><img
+                        <a href="#" class="card-img-top d-block"><img
                                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool6.png"
                                 alt="Voice Assistant SDK logo"></a>
                         <div class="card-title p-20-32">
@@ -453,7 +532,7 @@
                     <button type="button">
                         <a href="#" class="d-flex align-center">
                             <span class="fz-16 fw-700 mr-12">Back to top</span>
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined arrow_upward">
                                 arrow_upward
                             </span>
                         </a>

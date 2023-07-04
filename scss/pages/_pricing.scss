@@ -4,6 +4,11 @@
         width: 636px;
         margin-left: auto;
     }
+
+    &-img-price {
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
 }
 
 // 定價
@@ -26,7 +31,8 @@
 
     &-footer {
         border-top: 1px solid #525252;
-        a:hover{
+
+        a:hover {
             color: #525252;
         }
     }

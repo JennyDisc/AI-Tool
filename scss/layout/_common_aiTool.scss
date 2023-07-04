@@ -28,6 +28,8 @@
 
         &-btn {
             cursor: pointer;
+            // 定位給.dropdown-btn-filter找父層用的(即定位起點依據)
+            position: relative;
 
             &:active {
                 border: 1px solid #000;
@@ -42,6 +44,59 @@
         .dropdown-btn {
             cursor: pointer;
 
+            &-filter {
+                width: 240px;
+                background: #FFFFFF;
+                position: absolute;
+                left: 10;
+                margin-top: 20px;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+                a {
+                    color: #020202;
+                }
+
+                .filter-title {
+                    color: #919191;
+                    cursor: auto;
+                }
+
+                >li:nth-child(1)::after {
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    margin: 16px 40px 24px 40px;
+                    background-color: #919191;
+                }
+
+                .filter-content {
+                    padding: 8px 40px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background: #525252;
+                    }
+
+                    span.show {
+                        display: inline-block;
+                    }
+                }
+
+                &.show {
+                    display: block;
+                }
+            }
+
+            &-expandLess.show {
+                display: block;
+            }
+
+            &-expandMore.hide {
+                display: none;
+            }
+
             &:active {
                 border: 1px solid #000;
             }
@@ -49,10 +104,10 @@
             &-menu {
                 // 點擊按鈕前隱藏選單
                 display: none;
-                position: relative;
+                background: #FFFFFF;
+                position: absolute;
+                right: 0;
                 margin-top: 20px;
-                // 讓a:hover超出<ul>的部分隱藏
-                overflow: hidden;
                 box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 
                 &.show {
@@ -92,6 +147,17 @@
 
     // 卡片區塊
     &-card {
+        .card-img-top {
+            // 讓卡片內圖片Zoom-in特效時圖片不會超出容器
+            overflow: hidden;
+
+            img {
+                // 因圖片高度不及容器高度，故使圖片滿版
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
         li {
             /* 三欄每卡片寬度416/1296=32.098... */
             max-width: 32.1%;

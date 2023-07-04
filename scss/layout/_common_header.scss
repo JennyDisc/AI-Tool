@@ -6,6 +6,14 @@
     background: none;
     border: 0;
 
+    &-menu.hide {
+        display: none;
+    }
+
+    &-close.show {
+        display: block;
+    }
+
     &-collapse {
         // 點擊漢堡選單前隱藏下拉選單 ul li
         display: none;
@@ -34,7 +42,7 @@
             border-bottom: 1px solid #FFFFFF;
         }
 
-        // 點擊漢堡選單後，讓下拉選單 ul li 顯示
+        // // 點擊漢堡選單後，讓下拉選單 ul li 顯示
         &.show {
             display: block;
         }
@@ -42,6 +50,20 @@
 }
 
 header {
+    h1 {
+        a {
+            width: 244.99px;
+            height: 40px;
+            display: block;
+            // 當圖片原始檔超出定義圖片寬、高，background-size(設置背景圖片大小): 屬性contain可讓圖片自適應
+            background-size: contain;
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png);
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
     // 定位給.navbar-btn-collapse找父層用的(即定位起點依據)
     position: relative;
     // 固定<header>表頭高度
@@ -76,32 +98,126 @@ header {
         }
     }
 
-    &-img img {
-        width: 180px;
-        height: 180px;
+    &-img {
+        // display: flex;
+        // justify-content: end;
+        overflow: hidden;
+        // width: 540px;
+        // height: 180px;
+        max-width: 100%;
 
-        // 引用動畫的 @keyframe 名稱
-        animation: fadeInUp;
-        // 動畫播放次數
-        animation-iteration-count: infinite;
+        img {
+            width: 180px;
+            height: 180px;
+            // max-width: 100%;
+            // height: auto;
+            object-fit: contain;
 
-        &:nth-child(1) {
-            animation-delay: 0.7s;
-            // 設定持續時間
-            animation-duration: 4s;
+            // // 引用動畫的 @keyframe 名稱(引用的 animate.css 有，此處可以不必寫)
+            // animation: fadeInUp;
+            // // 動畫播放次數
+            animation-iteration-count: infinite;
+
+            &:nth-child(1) {
+                animation-delay: 0.88s;
+                // animation-delay: 0.7s;
+                // 設定持續時間
+                animation-duration: 4s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 0.76s;
+                // animation-delay: 0.5s;
+                // 設定持續時間
+                animation-duration: 4s;
+            }
+
+            &:nth-child(3) {
+                // animation-delay: 0.88s;
+                // animation-delay: 0.3s;
+                // 設定持續時間
+                animation-duration: 4s;
+            }
+
         }
 
-        &:nth-child(2) {
-            animation-delay: 0.5s;
-            // 設定持續時間
-            animation-duration: 4s;
-        }
+        // 法2：利用keyframes微調動畫
+        // @keyframes fadeInUp {
+        //     0% {
+        //         transform: translateY(100%)
+        //     }
 
-        &:nth-child(3) {
-            animation-delay: 0.3s;
-            // 設定持續時間
-            animation-duration: 4s;
-        }
+        //     25% {
+        //         transform: translateY(0)
+        //     }
 
+        //     50% {
+        //         transform: translateY(0)
+        //     }
+
+        //     60% {
+        //         transform: translateY(-100%)
+        //     }
+
+        //     to {
+        //         transform: translateY(-100%)
+        //     }
+        // }
+
+        // .animate__fadeInUp {
+        //     animation: fadeInUp 3s cubic-bezier(.05,.05,1,1) 1s infinite
+        // }
+
+        // @keyframes fadeInUp-1 {
+        //     0% {
+        //         transform: translateY(100%)
+        //     }
+
+        //     25% {
+        //         transform: translateY(0)
+        //     }
+
+        //     50% {
+        //         transform: translateY(0)
+        //     }
+
+        //     60% {
+        //         transform: translateY(-100%)
+        //     }
+
+        //     to {
+        //         transform: translateY(-100%)
+        //     }
+        // }
+
+        // .animate__fadeInUp-1 {
+        //     animation: fadeInUp-1 3s cubic-bezier(.05,.05,1,1) 0.88s infinite
+        // }
+
+        // @keyframes fadeInUp-2 {
+        //     0% {
+        //         transform: translateY(100%)
+        //     }
+
+        //     25% {
+        //         transform: translateY(0)
+        //     }
+
+        //     50% {
+        //         transform: translateY(0)
+        //     }
+
+        //     60% {
+        //         transform: translateY(-100%)
+        //     }
+
+        //     to {
+        //         transform: translateY(-100%)
+        //     }
+        // }
+
+        // .animate__fadeInUp-2 {
+        //     animation: fadeInUp-1 3s cubic-bezier(.05,.05,1,1) 0.76s infinite
+        // }
     }
 }

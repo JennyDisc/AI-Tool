@@ -1,5 +1,5 @@
 // 我們的服務
-.server {
+.service {
     &-title-mb {
         display: none;
     }
@@ -17,94 +17,96 @@
     &-logo {
         overflow-x: auto;
         position: relative;
+        overflow: hidden;
 
-        /* 隱藏 x 軸 1 */
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        // /* 隱藏 x 軸 1 */
+        // /* Hide scrollbar for Chrome, Safari and Opera */
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
 
-        /* 隱藏 x 軸 2 */
-        /* Hide scrollbar for IE, Edge and Firefox */
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
+        // /* 隱藏 x 軸 2 */
+        // /* Hide scrollbar for IE, Edge and Firefox */
+        // -ms-overflow-style: none;
+        // /* IE and Edge */
+        // scrollbar-width: none;
+        // /* Firefox */
 
         &::after,
         &::before {
             content: "";
             position: absolute;
-            // position: sticky;
             width: 196px;
-            height: 40px;
+            // width: 160px;
+            height: 70px;
+            // height: 40px;
             top: 0;
         }
 
         &::before {
             // left: 100;
             left: 0;
-            padding-right: 196px;
+            // padding-right: 196px;
             // background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
             // background: linear-gradient(to left, transparent, #020202);
-            background: linear-gradient(90deg, #1E1E1E 0%,
-                    rgba(0, 0, 0, 0.991615) 11.79%,
-                    rgba(0, 0, 0, 0.967585) 21.38%,
-                    rgba(0, 0, 0, 0.9296) 29.12%,
-                    rgba(0, 0, 0, 0.879348) 35.34%,
-                    rgba(0, 0, 0, 0.818519) 40.37%,
-                    rgba(0, 0, 0, 0.7488) 44.56%,
-                    rgba(0, 0, 0, 0.671881) 48.24%,
-                    rgba(0, 0, 0, 0.589452) 51.76%,
-                    rgba(0, 0, 0, 0.5032) 55.44%,
-                    rgba(0, 0, 0, 0.414815) 59.63%,
-                    rgba(0, 0, 0, 0.325985) 64.66%,
-                    rgba(0, 0, 0, 0.2384) 70.88%,
-                    rgba(0, 0, 0, 0.153748) 78.62%,
-                    rgba(0, 0, 0, 0.0737185) 88.21%,
-                    rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(to left, transparent, #020202 75%);
+            // background: linear-gradient(90deg, #1E1E1E 0%,
+            //         rgba(0, 0, 0, 0.991615) 11.79%,
+            //         rgba(0, 0, 0, 0.967585) 21.38%,
+            //         rgba(0, 0, 0, 0.9296) 29.12%,
+            //         rgba(0, 0, 0, 0.879348) 35.34%,
+            //         rgba(0, 0, 0, 0.818519) 40.37%,
+            //         rgba(0, 0, 0, 0.7488) 44.56%,
+            //         rgba(0, 0, 0, 0.671881) 48.24%,
+            //         rgba(0, 0, 0, 0.589452) 51.76%,
+            //         rgba(0, 0, 0, 0.5032) 55.44%,
+            //         rgba(0, 0, 0, 0.414815) 59.63%,
+            //         rgba(0, 0, 0, 0.325985) 64.66%,
+            //         rgba(0, 0, 0, 0.2384) 70.88%,
+            //         rgba(0, 0, 0, 0.153748) 78.62%,
+            //         rgba(0, 0, 0, 0.0737185) 88.21%,
+            //         rgba(0, 0, 0, 0) 100%);
         }
 
         &::after {
             right: 0;
-            padding-left: 196px;
+            // padding-left: 196px;
             // background: linear-gradient(to right, transparent, #020202);
             // background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-            background: linear-gradient(90deg,
-                    #1E1E1E 0%,
-                    rgba(0, 0, 0, 0.991615) 11.79%,
-                    rgba(0, 0, 0, 0.967585) 21.38%,
-                    rgba(0, 0, 0, 0.9296) 29.12%,
-                    rgba(0, 0, 0, 0.879348) 35.34%,
-                    rgba(0, 0, 0, 0.818519) 40.37%,
-                    rgba(0, 0, 0, 0.7488) 44.56%,
-                    rgba(0, 0, 0, 0.671881) 48.24%,
-                    rgba(0, 0, 0, 0.589452) 51.76%,
-                    rgba(0, 0, 0, 0.5032) 55.44%,
-                    rgba(0, 0, 0, 0.414815) 59.63%,
-                    rgba(0, 0, 0, 0.325985) 64.66%,
-                    rgba(0, 0, 0, 0.2384) 70.88%,
-                    rgba(0, 0, 0, 0.153748) 78.62%,
-                    rgba(0, 0, 0, 0.0737185) 88.21%,
-                    rgba(0, 0, 0, 0) 100%);
-            transform: rotate(-180deg);
-        }
-
-        li:not(:last-child) {
-            margin-right: 20px;
+            background: linear-gradient(to right, transparent, #020202 75%);
+            // background: linear-gradient(90deg,
+            //         #1E1E1E 0%,
+            //         rgba(0, 0, 0, 0.991615) 11.79%,
+            //         rgba(0, 0, 0, 0.967585) 21.38%,
+            //         rgba(0, 0, 0, 0.9296) 29.12%,
+            //         rgba(0, 0, 0, 0.879348) 35.34%,
+            //         rgba(0, 0, 0, 0.818519) 40.37%,
+            //         rgba(0, 0, 0, 0.7488) 44.56%,
+            //         rgba(0, 0, 0, 0.671881) 48.24%,
+            //         rgba(0, 0, 0, 0.589452) 51.76%,
+            //         rgba(0, 0, 0, 0.5032) 55.44%,
+            //         rgba(0, 0, 0, 0.414815) 59.63%,
+            //         rgba(0, 0, 0, 0.325985) 64.66%,
+            //         rgba(0, 0, 0, 0.2384) 70.88%,
+            //         rgba(0, 0, 0, 0.153748) 78.62%,
+            //         rgba(0, 0, 0, 0.0737185) 88.21%,
+            //         rgba(0, 0, 0, 0) 100%);
+            // transform: rotate(-180deg);
         }
 
         img {
             display: inline-block;
             width: 160px;
             height: 40px;
-            // max-width: initial;
+            // 防止圖片變形
+            object-fit: cover;
+            padding-right: 20px;
         }
     }
 }
 
 // 顧客反饋
-.feeback {
+.feedback {
     // 分頁點點在卡片下方法1：拿掉swiper css對swiper的overflow:hidden
     // overflow: visible;
 
@@ -154,7 +156,16 @@
     }
 }
 
+.flash_on,
+.auto_awesome,
+.library_add {
+    font-size: 80px;
+}
+
 .star {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
+}
+
+.arrow_upward {
+    font-size: 16px;
 }

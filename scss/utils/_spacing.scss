@@ -187,6 +187,7 @@
             padding-bottom: 28px;
         }
     }
+
     &-80-mb {
         @media (max-width:767px) {
             padding-top: 80px;
@@ -222,6 +223,10 @@
             padding-right: 20px;
         }
     }
+}
+
+.pb-20 {
+    padding-bottom: 20px;
 }
 
 .p-20-32 {
