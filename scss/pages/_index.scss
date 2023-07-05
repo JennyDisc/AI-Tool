@@ -18,6 +18,8 @@
         overflow-x: auto;
         position: relative;
         overflow: hidden;
+        // 間距方法1：li 之間的間距可以在 ul 寫入 gap:20px
+        gap: 20px;
 
         // /* 隱藏 x 軸 1 */
         // /* Hide scrollbar for Chrome, Safari and Opera */
@@ -37,20 +39,17 @@
             content: "";
             position: absolute;
             width: 196px;
-            // width: 160px;
+            // 助教建議偽元素增加高度(本來40px)，可以讓畫面更好
             height: 70px;
-            // height: 40px;
             top: 0;
         }
 
         &::before {
-            // left: 100;
             left: 0;
-            // padding-right: 196px;
-            // background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-            // background: linear-gradient(to left, transparent, #020202);
+            // 漸層寫法1
             background: linear-gradient(to left, transparent, #020202 75%);
-            // background: linear-gradient(90deg, #1E1E1E 0%,
+            // 漸層寫法2
+            // background: linear-gradient(90deg, #020202 0%,
             //         rgba(0, 0, 0, 0.991615) 11.79%,
             //         rgba(0, 0, 0, 0.967585) 21.38%,
             //         rgba(0, 0, 0, 0.9296) 29.12%,
@@ -70,12 +69,11 @@
 
         &::after {
             right: 0;
-            // padding-left: 196px;
-            // background: linear-gradient(to right, transparent, #020202);
-            // background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+            // 漸層寫法1
             background: linear-gradient(to right, transparent, #020202 75%);
+            // 漸層寫法2
             // background: linear-gradient(90deg,
-            //         #1E1E1E 0%,
+            //         #020202 0%,
             //         rgba(0, 0, 0, 0.991615) 11.79%,
             //         rgba(0, 0, 0, 0.967585) 21.38%,
             //         rgba(0, 0, 0, 0.9296) 29.12%,
@@ -96,11 +94,13 @@
 
         img {
             display: inline-block;
-            width: 160px;
+            // 讓圖片隨解析度自然縮小
+            max-width: 160px;
             height: 40px;
             // 防止圖片變形
             object-fit: cover;
-            padding-right: 20px;
+            // 間距方法2
+            // padding-right: 20px;
         }
     }
 }

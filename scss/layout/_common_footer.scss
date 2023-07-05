@@ -3,7 +3,7 @@
     button {
         margin: 0 auto;
         color: #FFFFFF;
-        background: #1E1E1E;
+        background: #020202;
         cursor: pointer;
 
         &:hover {
@@ -36,11 +36,27 @@
             color: #525252;
         }
 
+        // li:nth-child(1) {
+        //     // 702/1296 =0.541...
+        //    min-width: 124px;
+        // }
+
+        li:nth-child(2) {
+        //     // 702/1296 =0.541...
+            // padding-right: 54%;
+            max-width: 73%;
+        }
+
+        // li:nth-child(3) {
+        //     // 702/1296 =0.541...
+        //     min-width: 124px;
+        // }
+
         button {
             min-width: 117px;
             color: #FFFFFF;
             border: none;
-            background: #1E1E1E;
+            background: #020202;
             cursor: pointer;
 
             &:hover {

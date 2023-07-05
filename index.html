@@ -109,7 +109,7 @@
             <!-- 合作夥伴 -->
             <section class="partner mb-160 mb-48-mb">
                 <h3 class="fz-32 fw-900 lh-12 mb-80 fz-20-mb mb-24-mb">來自合作夥伴</h3>
-                <!-- mb-20 -->
+                <!--<ul>若用margin-bottom做間距，畫面兩列中間會有斷裂感，因為漸層被限制在該<ul>範圍內(即偽元素無法覆蓋到橘色的間距區塊 -->
                 <ul class="partner-logo d-flex justify-center align-center pb-20">
                     <li>
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true"
@@ -479,17 +479,17 @@
                 </ul>
                 <!-- 卡片頁碼 -->
                 <ul class="aiTool-pagination fz-14 fw-700 d-flex justify-end">
-                    <li class="mr-4 d-flex justify-center align-center border-ra-16"><a href="#" class="color-ff">1</a>
+                    <li class="mr-4 d-flex justify-center align-center border-ra-16"><button type="button" class="color-ff">1</button>
                     </li>
-                    <li class="mr-4 d-flex justify-center align-center"><a href="#" class="color-02">2</a></li>
-                    <li class="mr-4 d-flex justify-center align-center"><a href="#" class="color-02">3</a></li>
-                    <li class="mr-4 d-flex justify-center align-center"><a href="#" class="color-02">4</a></li>
-                    <li class="mr-4 d-flex justify-center align-center"><a href="#" class="color-02">5</a></li>
-                    <li class="mr-4 d-flex justify-center align-center"><a href="#" class="color-02">
+                    <li class="mr-4 d-flex justify-center align-center"><button type="button" class="color-02">2</button></li>
+                    <li class="mr-4 d-flex justify-center align-center"><button type="button" class="color-02">3</button></li>
+                    <li class="mr-4 d-flex justify-center align-center"><button type="button" class="color-02">4</button></li>
+                    <li class="mr-4 d-flex justify-center align-center"><button type="button" class="color-02">5</button></li>
+                    <li class="mr-4 d-flex justify-center align-center"><button type="button" class="color-02">
                             <span class="material-symbols-outlined">
                                 chevron_right
                             </span>
-                        </a></li>
+                        </button></li>
                 </ul>
             </section>
         </div>
@@ -519,16 +519,21 @@
                             alt="AI工具王logo"></a>
                 </li>
             </ul>
-            <ul class="footer-buttom fw-700 d-flex justify-between mt-32 mb-32">
+            <ul class="footer-buttom fw-700 d-flex justify-between flex-w-wrap mt-32 mb-32">
                 <li class="d-flex">
                     <p class="mr-100 mb-36-mb">AI工具王 © 2023</p>
-                    <ul class="d-flex">
+                    <!-- <ul class="d-flex">
                         <li class="mr-20"><a href="#">Facebook</a></li>
                         <li class="mr-20"><a href="#">Twitter</a></li>
                         <li><a href="#">Instagram</a></li>
-                    </ul>
-                <li>
-                <li>
+                    </ul> -->
+                </li>
+                <li class="d-flex">
+                    <a href="#" class="mr-20">Facebook</a>
+                    <a href="#" class="mr-20">Twitter</a>
+                    <a href="#">Instagram</a>
+                </li>
+                <li class="d-flex justify-end">
                     <button type="button">
                         <a href="#" class="d-flex align-center">
                             <span class="fz-16 fw-700 mr-12">Back to top</span>

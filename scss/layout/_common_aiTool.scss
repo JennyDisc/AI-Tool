@@ -171,8 +171,25 @@
             width: 48px;
             height: 48px;
 
+            button {
+                padding: 10px 12px;
+                color: #020202;
+                border: none;
+                // 背景透明度
+                background: transparent;
+                cursor: pointer;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+
             &:nth-child(1) {
                 background: #020202;
+
+                button {
+                    color: #FFFFFF;
+                }
             }
 
             &:hover {
@@ -180,13 +197,13 @@
                 border-radius: 16px;
             }
 
-            a {
-                padding: 10px 12px;
+            // a {
+            //     padding: 10px 12px;
 
-                &:hover {
-                    color: #FFFFFF;
-                }
-            }
+            //     &:hover {
+            //         color: #FFFFFF;
+            //     }
+            // }
         }
     }
 }

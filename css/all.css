@@ -153,7 +153,7 @@ body {
   line-height: 1.5;
   /* 設計稿多處字體16px為css預設，故不另設font-size */
   color: #FFFFFF;
-  background-color: #1E1E1E;
+  background-color: #020202;
 }
 
 a {
@@ -568,7 +568,7 @@ header a:hover {
 }
 .headerTitle button {
   color: #FFFFFF;
-  background: #1E1E1E;
+  background: #020202;
   cursor: pointer;
 }
 .headerTitle button:hover {
@@ -722,18 +722,25 @@ header a:hover {
   width: 48px;
   height: 48px;
 }
+.aiTool-pagination li button {
+  padding: 10px 12px;
+  color: #020202;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.aiTool-pagination li button:hover {
+  color: #FFFFFF;
+}
 .aiTool-pagination li:nth-child(1) {
   background: #020202;
+}
+.aiTool-pagination li:nth-child(1) button {
+  color: #FFFFFF;
 }
 .aiTool-pagination li:hover {
   background: #525252;
   border-radius: 16px;
-}
-.aiTool-pagination li a {
-  padding: 10px 12px;
-}
-.aiTool-pagination li a:hover {
-  color: #FFFFFF;
 }
 
 .card-title {
@@ -768,7 +775,7 @@ header a:hover {
 .begin button {
   margin: 0 auto;
   color: #FFFFFF;
-  background: #1E1E1E;
+  background: #020202;
   cursor: pointer;
 }
 .begin button:hover {
@@ -789,11 +796,14 @@ header a:hover {
 .footer-buttom a:hover {
   color: #525252;
 }
+.footer-buttom li:nth-child(2) {
+  max-width: 73%;
+}
 .footer-buttom button {
   min-width: 117px;
   color: #FFFFFF;
   border: none;
-  background: #1E1E1E;
+  background: #020202;
   cursor: pointer;
 }
 .footer-buttom button:hover {
@@ -811,6 +821,7 @@ header a:hover {
   overflow-x: auto;
   position: relative;
   overflow: hidden;
+  gap: 20px;
 }
 .partner-logo::after, .partner-logo::before {
   content: "";
@@ -829,10 +840,9 @@ header a:hover {
 }
 .partner-logo img {
   display: inline-block;
-  width: 160px;
+  max-width: 160px;
   height: 40px;
   object-fit: cover;
-  padding-right: 20px;
 }
 
 .feedback .swiper-slide {
@@ -957,6 +967,11 @@ header a:hover {
     height: 117px;
   }
 }
+@media (max-width: 375px) {
+  .headerTitle-img img {
+    width: 33.3333333333%;
+  }
+}
 
 @media (max-width: 767px) {
   .service-title-mb {
@@ -965,6 +980,12 @@ header a:hover {
   .service-card li {
     width: 100%;
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .partner-logo::after, .partner-logo::before {
+    width: 15%;
   }
 }
 
@@ -1017,11 +1038,11 @@ header a:hover {
     width: 188.99px;
     height: 40px;
   }
-  .footer-buttom li:nth-child(1) {
-    flex-direction: column;
-  }
   .footer-buttom li:nth-child(1) p {
     margin-right: 0px;
+  }
+  .footer-buttom li:nth-child(2) {
+    order: 3;
   }
 }
 

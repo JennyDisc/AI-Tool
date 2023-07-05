@@ -5,6 +5,14 @@
     }
 }
 
+// 手機(iphone 6)斷點
+@mixin phone6 {
+    @media (max-width:375px) {
+        @content;
+    }
+}
+
+
 // index.html
 // 表頭
 .navbar-btn {
@@ -53,6 +61,15 @@ header {
             }
         }
     }
+
+    @include phone6() {
+        &-img {
+            img {
+                // 讓小草動畫自適應當前解析度
+                width: calc(100% / 3);
+            }
+        }
+    }
 }
 
 // 我們的服務
@@ -66,6 +83,21 @@ header {
             li {
                 width: 100%;
                 margin-right: 0px;
+            }
+        }
+    }
+}
+
+// 合作夥伴
+.partner {
+    &-logo {
+        @include phone() {
+
+            //  偽元素在RWD時寬度改成百分比，寫死寬度當解析度變小，偽元素會擋到大部分中間的 logo 圖片
+            &::after,
+            &::before {
+                // 偽元素寬度196/1296-0.151...
+                width: 15%;
             }
         }
     }
@@ -151,11 +183,15 @@ header {
 
         &-buttom {
             li:nth-child(1) {
-                flex-direction: column;
+                // flex-direction: column;
 
                 p {
                     margin-right: 0px;
                 }
+            }
+
+            li:nth-child(2) {
+                order: 3;
             }
         }
     }
