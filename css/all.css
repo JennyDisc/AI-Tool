@@ -796,8 +796,9 @@ header a:hover {
 .footer-buttom a:hover {
   color: #525252;
 }
-.footer-buttom li:nth-child(2) {
-  max-width: 73%;
+.footer-buttom li:nth-child(3) {
+  margin-left: auto;
+  order: 2;
 }
 .footer-buttom button {
   min-width: 117px;
@@ -822,6 +823,17 @@ header a:hover {
   position: relative;
   overflow: hidden;
   gap: 20px;
+  /* 隱藏 x 軸 1 */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* 隱藏 x 軸 2 */
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.partner-logo::-webkit-scrollbar {
+  display: none;
 }
 .partner-logo::after, .partner-logo::before {
   content: "";
@@ -832,10 +844,12 @@ header a:hover {
 }
 .partner-logo::before {
   left: 0;
+  padding-right: 196px;
   background: linear-gradient(to left, transparent, #020202 75%);
 }
 .partner-logo::after {
   right: 0;
+  padding-left: 196px;
   background: linear-gradient(to right, transparent, #020202 75%);
 }
 .partner-logo img {
@@ -1038,11 +1052,22 @@ header a:hover {
     width: 188.99px;
     height: 40px;
   }
+  .footer-buttom {
+    flex-wrap: wrap;
+  }
+  .footer-buttom li:nth-child(1) {
+    padding-bottom: 36px;
+    margin-right: 0;
+  }
   .footer-buttom li:nth-child(1) p {
     margin-right: 0px;
   }
   .footer-buttom li:nth-child(2) {
     order: 3;
+  }
+  .footer-buttom li:nth-child(3) {
+    padding-bottom: 36px;
+    order: 2;
   }
 }
 

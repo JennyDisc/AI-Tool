@@ -36,21 +36,10 @@
             color: #525252;
         }
 
-        // li:nth-child(1) {
-        //     // 702/1296 =0.541...
-        //    min-width: 124px;
-        // }
-
-        li:nth-child(2) {
-        //     // 702/1296 =0.541...
-            // padding-right: 54%;
-            max-width: 73%;
+        li:nth-child(3) {
+            margin-left: auto;
+            order: 2;
         }
-
-        // li:nth-child(3) {
-        //     // 702/1296 =0.541...
-        //     min-width: 124px;
-        // }
 
         button {
             min-width: 117px;
