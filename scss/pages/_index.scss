@@ -16,9 +16,7 @@
 .partner {
     &-logo {
         overflow-x: auto;
-        // overflow-x: scroll;
         position: relative;
-        overflow: hidden;
         // 間距方法1：li 之間的間距可以在 ul 寫入 gap:20px (gap指物件間的距離)
         gap: 20px;
 
@@ -38,7 +36,8 @@
         &::after,
         &::before {
             content: "";
-            position: absolute;
+            // 偽元素使用 position: absolute 時它會隨滾輪滾走，因為它是以 ul 為定位
+            position: sticky;
             width: 196px;
             // 助教建議偽元素增加高度(本來40px)，可以讓畫面更好
             height: 70px;
