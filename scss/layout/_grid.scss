@@ -183,23 +183,19 @@ header {
 
         &-buttom {
             flex-wrap: wrap;
+
             li:nth-child(1) {
-                // flex-direction: column;
                 padding-bottom: 36px;
                 margin-right: 0;
-
-                p {
-                    margin-right: 0px;
-                }
             }
 
             li:nth-child(2) {
                 order: 3;
+                width: 100%;
             }
 
             li:nth-child(3) {
                 padding-bottom: 36px;
-                order: 2;
             }
         }
     }

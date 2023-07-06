@@ -798,7 +798,6 @@ header a:hover {
 }
 .footer-buttom li:nth-child(3) {
   margin-left: auto;
-  order: 2;
 }
 .footer-buttom button {
   min-width: 117px;
@@ -1059,15 +1058,12 @@ header a:hover {
     padding-bottom: 36px;
     margin-right: 0;
   }
-  .footer-buttom li:nth-child(1) p {
-    margin-right: 0px;
-  }
   .footer-buttom li:nth-child(2) {
     order: 3;
+    width: 100%;
   }
   .footer-buttom li:nth-child(3) {
     padding-bottom: 36px;
-    order: 2;
   }
 }
 
